@@ -379,6 +379,7 @@ class TestConnectionCreate(APITestCase):
         response = self.client.post(url, SENDLE_CONNECTION_DATA, format="json")
         response_data = json.loads(response.content)
 
+        print(response)
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
         self.assertDictEqual(response_data, SENDLE_CONNECTION_RESPONSE)
 

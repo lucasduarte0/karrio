@@ -114,6 +114,8 @@ elif SKIP_DEFAULT_CACHE:
         "Skipping default Redis cache configuration (worker mode - only HUEY Redis needed)"
     )
 else:
-    # No Redis available — cache constance values using Django's default
-    # LocMemCache to avoid N+1 database queries on each config access
-    CONSTANCE_DATABASE_CACHE_BACKEND = "default"
+    # No Redis available — constance will read directly from the database.
+    # We intentionally do NOT set CONSTANCE_DATABASE_CACHE_BACKEND here
+    # because constance rejects Django's default LocMemCache backend
+    # (it requires a cross-process cache like Redis or Memcached).
+    pass
