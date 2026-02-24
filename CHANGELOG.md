@@ -1,3 +1,13 @@
+# Karrio 2026.1.15
+
+## Changes
+
+### Fix
+
+- fix: remove broken constance cache backend setting for non-Redis environments
+
+---
+
 # Karrio 2026.1.14
 
 ## Changes
