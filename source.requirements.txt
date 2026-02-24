@@ -21,7 +21,7 @@ django-downloadview==2.5.0
 django-email-verification==0.3.3
 django-filter==25.2
 django-formtools==2.5.1
-django-health-check==4.0.4
+django-health-check==4.0.5
 django-import-export==4.4.0
 django-oauth-toolkit==3.2.0
 django-otp==1.7.0
@@ -142,7 +142,7 @@ rpds-py==0.30.0
 sentry-sdk==2.53.0
 six==1.17.0
 sqlparse==0.5.5
-strawberry-graphql==0.299.0
+strawberry-graphql==0.305.0
 tablib==3.9.0
 tinycss2==1.5.1
 tinyhtml5==2.0.0
@@ -156,7 +156,7 @@ weasyprint==68.1
 webencodings==0.5.1
 whitenoise==6.11.0
 wrapt==1.17.3
-xmltodict==1.0.3
+xmltodict==1.0.4
 zipp==3.23.0
 zopfli==0.4.1
 
